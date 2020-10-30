@@ -1,0 +1,154 @@
+header, .logo {
+  display: block;
+  flex-direction: row;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 20px 14px 20px;
+    padding-top: 10px;
+    font-size: 22px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+
+
+/* Mobile First */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 5px;
+}
+
+/*-------Mobile First end------*/
+
+/* Groups & Items for Desktop */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+/* -------Groups & Items for Desktop ------  */
+
+
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 90%;
+}
+
+img-main {
+  width: 40%
+}
+
+img.rounded {
+  border-radius: 10px;
+}
+
+
+
+/* --------------Header -----------*/
+
+
+header h1 {
+  margin: 0;
+  padding: 20px 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+}
+
+/*------ article-------*/
+#top, #portfolio, #contact {
+  margin-bottom: 120px;
+}
+/*-----article end----*/
+
+/*-----article about----*/
+#middle {
+  background-color: rgb(230, 213, 193);
+  padding: 20px 0 30px 0px;
+}
+
+
+
+/*-------Email form-------*/
+form {
+  padding-right: 7px;
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 100px;
+}
